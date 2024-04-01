@@ -1,0 +1,60 @@
+––––––––––––––––––––––––––
+30 March 2024
+––––––––––––––––––––––––––
+
+ LabRecorder handles storage of the synchronization information in the XDF file for you. The official XDF importers (pyxdf or xdf-Matlab), whether used directly or integrated into a tool like MNE or EEGLAB, use the synchronization information in the XDF file and perform stream synchronization upon file import. Please use these tools for your data storage and import if possible.
+
+
+ Found device MuseS-6F7A, MAC Address 00:55:DA:BB:6F:7A
+
+curl -L https://github.com/sccn/liblsl/releases/download/v1.16.0/liblsl-1.16.0-jammy_amd64.deb -o liblsl.deb
+muselsl stream --address 00:55:DA:BB:6F:7A
+muselsl stream --name MuseS-6F7A
+muselsl view --address 00:55:DA:BB:6F:7A
+
+
+sudo apt-get install qt6-base-dev freeglut3-dev
+
+sudo apt-get install qt6-base-dev freeglut3-dev
+sudo atom /etc/apt/sources.list
+Clock Offset
+––––––––––––––––––––––––––
+say for example the base clock speed of a gpu is 1500mhz. an offset of +100mhz means that the base clock speed was increased by +100mhz to 1600mhz.
+
+
+Qt Creator
+––––––––––––––––––––––
+ahmad.sharif@tuni.fi
+Pi.3.1416#
+https://plus.tuni.fi/comp.cs.110/spring-2024/rounds_r01/r01_03_qtcreator/
+
+https://www.qt.io/download-qt-installer
+
+https://packages.ubuntu.com/jammy/amd64/qt6-base-dev/download
+
+
+sudo gedit /etc/apt/sources.list
+
+
+qt6-base-dev
+freeglut3-dev
+
+
+The following packages have unmet dependencies:
+libx11-dev : Depends: libx11-6 (= 2:1.7.5-1) but 2:1.7.5-1ubuntu0.3 is to be installed
+
+sudo apt-get -f install
+
+
+
+sudo add-apt-repository ppa:<ppa_name>
+sudo add-apt-repository ppa:wrinkliez/ppasearch
+sudo add-apt-repository ppa:wrinkliez/ppasearch
+sudo apt-get update
+sudo apt-get install ppasearch
+
+https://packages.ubuntu.com/jammy/qt6-base-dev
+https://packages.ubuntu.com/jammy/wrinkliez/ppasearch
+
+
+sudo apt install build-essential qtbase6-dev 

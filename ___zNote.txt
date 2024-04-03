@@ -1,3 +1,21 @@
+
+By synchronization I mean that when we record from two or more devices (in the future) and want to calculate, say, correlation between two signals from the different streams, the signals have to be synchronized (i.e. ‘placed under’ one another so that the timing is matched).
+
+From https://labstreaminglayer.readthedocs.io/info/time_synchronization.html I understand that form LSL we can obtain two time stamps and based on these timestamps the recordings can be synchronized. They also mention LabRecorder as the application to record the data.
+
+So I think that the next things to try could be:
+
+- if having LabRecorder running on the computer, can you record the data over the dedicated network from the MUSE/RPi
+
+- do you see the two kinds of time stamps in the recording?
+
+- what do these time stamps actually mean and how to synchronize using these time stamps.
+
+
+
+
+sudo apt remove liblsl
+
 ––––––––––––––––––––––––––
 30 March 2024
 ––––––––––––––––––––––––––
@@ -15,7 +33,6 @@ muselsl view --address 00:55:DA:BB:6F:7A
 
 sudo apt-get install qt6-base-dev freeglut3-dev
 
-sudo apt-get install qt6-base-dev freeglut3-dev
 sudo atom /etc/apt/sources.list
 Clock Offset
 ––––––––––––––––––––––––––
@@ -35,26 +52,22 @@ https://packages.ubuntu.com/jammy/amd64/qt6-base-dev/download
 
 sudo gedit /etc/apt/sources.list
 
-
-qt6-base-dev
-freeglut3-dev
-
-
-The following packages have unmet dependencies:
-libx11-dev : Depends: libx11-6 (= 2:1.7.5-1) but 2:1.7.5-1ubuntu0.3 is to be installed
-
 sudo apt-get -f install
 
 
 
 sudo add-apt-repository ppa:<ppa_name>
 sudo add-apt-repository ppa:wrinkliez/ppasearch
-sudo add-apt-repository ppa:wrinkliez/ppasearch
-sudo apt-get update
-sudo apt-get install ppasearch
 
 https://packages.ubuntu.com/jammy/qt6-base-dev
 https://packages.ubuntu.com/jammy/wrinkliez/ppasearch
 
 
-sudo apt install build-essential qtbase6-dev 
+sudo apt install build-essential qtbase6-dev
+
+LabRecorder
+––––––––––––––––––––––––––
+https://github.com/labstreaminglayer/App-LabRecorder
+https://labstreaminglayer.readthedocs.io/dev/build_env.html
+sudo apt-get install qt6-base-dev freeglut3-dev
+sudo apt install build-essential g++ cmake

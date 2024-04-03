@@ -1,0 +1,65 @@
+sudo apt install libpugixml1v5
+
+
+Liblsl Location
+–––––––––––––––––––––––––
+/usr/lib
+
+LabRecorder
+–––––––––––––––––––––––––
+https://github.com/labstreaminglayer/App-LabRecorder
+
+
+/usr/LabRecorder
+
+/usr/local/bin/LabRecorder
+/usr/bin/LabRecorder
+
+
+/usr/bin/LabRecorderCLI
+
+https://github.com/xdf-modules/pyxdf
+
+
+Read xdf file format in python
+
+MuseLSL
+–––––––––––––––––––––––––
+
+https://github.com/sccn/liblsl
+
+
+sudo apt install python3-pip -y
+sudo pip install pylsl
+sudo pip install muselsl
+
+muselsl view
+–––––––––––––––––––––––––
+sudo apt install python3-tk -y
+sudo apt install python3-pil python3-pil.imagetk -y
+
+
+https://github.com/alexandrebarachant/muse-lsl/issues/1
+
+liblsl
+–––––––––––––––––––––––––
+https://github.com/sccn/liblsl
+
+https://labstreaminglayer.readthedocs.io/dev/lib_dev.html
+
+/home/ahmad/.local/lib/python3.10/site-packages/pylsl
+
+Create Lib folder and paste liblsl folder there
+
+
+labstreaminglayer
+
+
+MNE
+–––––––––––––––––––––––––
+https://mne.tools/dev/install/manual_install.html#manual-install
+
+https://mne.tools/dev/auto_examples/io/read_xdf.html
+
+conda create --override-channels --channel=conda-forge --name=mne mne-base
+pip install mne

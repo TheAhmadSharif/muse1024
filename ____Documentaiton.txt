@@ -1,4 +1,34 @@
 
+
+Liblsl Location
+–––––––––––––––––––––––––
+/usr/lib
+sudo apt remove liblsl
+LabRecorder
+–––––––––––––––––––––––––
+https://github.com/labstreaminglayer/App-LabRecorder
+
+
+/usr/LabRecorder
+/usr/local/bin/LabRecorder
+/usr/bin/LabRecorder
+/usr/bin/LabRecorderCLI
+
+https://github.com/xdf-modules/pyxdf
+
+
+Read xdf file format in python
+
+MuseLSL
+–––––––––––––––––––––––––
+
+https://github.com/sccn/liblsl
+
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
 By synchronization I mean that when we record from two or more devices (in the future) and want to calculate, say, correlation between two signals from the different streams, the signals have to be synchronized (i.e. ‘placed under’ one another so that the timing is matched).
 
 From https://labstreaminglayer.readthedocs.io/info/time_synchronization.html I understand that form LSL we can obtain two time stamps and based on these timestamps the recordings can be synchronized. They also mention LabRecorder as the application to record the data.
@@ -14,7 +44,7 @@ So I think that the next things to try could be:
 
 
 
-sudo apt remove liblsl
+
 
 ––––––––––––––––––––––––––
 30 March 2024
@@ -31,8 +61,6 @@ muselsl stream --name MuseS-6F7A
 muselsl view --address 00:55:DA:BB:6F:7A
 
 
-sudo apt-get install qt6-base-dev freeglut3-dev
-
 sudo atom /etc/apt/sources.list
 Clock Offset
 ––––––––––––––––––––––––––
@@ -41,8 +69,6 @@ say for example the base clock speed of a gpu is 1500mhz. an offset of +100mhz m
 
 Qt Creator
 ––––––––––––––––––––––
-ahmad.sharif@tuni.fi
-Pi.3.1416#
 https://plus.tuni.fi/comp.cs.110/spring-2024/rounds_r01/r01_03_qtcreator/
 
 https://www.qt.io/download-qt-installer
@@ -50,20 +76,9 @@ https://www.qt.io/download-qt-installer
 https://packages.ubuntu.com/jammy/amd64/qt6-base-dev/download
 
 
-sudo gedit /etc/apt/sources.list
 
 sudo apt-get -f install
 
-
-
-sudo add-apt-repository ppa:<ppa_name>
-sudo add-apt-repository ppa:wrinkliez/ppasearch
-
-https://packages.ubuntu.com/jammy/qt6-base-dev
-https://packages.ubuntu.com/jammy/wrinkliez/ppasearch
-
-
-sudo apt install build-essential qtbase6-dev
 
 LabRecorder
 ––––––––––––––––––––––––––
@@ -71,3 +86,45 @@ https://github.com/labstreaminglayer/App-LabRecorder
 https://labstreaminglayer.readthedocs.io/dev/build_env.html
 sudo apt-get install qt6-base-dev freeglut3-dev
 sudo apt install build-essential g++ cmake
+
+
+
+
+sudo apt install python3-pip -y
+sudo pip install pylsl
+sudo pip install muselsl
+
+muselsl view
+–––––––––––––––––––––––––
+sudo apt install python3-tk -y
+sudo apt install python3-pil python3-pil.imagetk -y
+
+
+https://github.com/alexandrebarachant/muse-lsl/issues/1
+
+liblsl
+–––––––––––––––––––––––––
+https://github.com/sccn/liblsl
+
+https://labstreaminglayer.readthedocs.io/dev/lib_dev.html
+
+/home/ahmad/.local/lib/python3.10/site-packages/pylsl
+
+Create Lib folder and paste liblsl folder there
+
+
+labstreaminglayer
+
+
+MNE
+–––––––––––––––––––––––––
+https://mne.tools/dev/install/manual_install.html#manual-install
+
+https://mne.tools/dev/auto_examples/io/read_xdf.html
+
+conda create --override-channels --channel=conda-forge --name=mne mne-base
+pip install mne
+
+
+
+–––––––––––––––––––––––––––––––––––––––––––

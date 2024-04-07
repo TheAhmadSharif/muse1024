@@ -1,0 +1,108 @@
+sudo apt install python3-pip -y
+sudo pip install pylsl
+sudo pip install muselsl
+pip install mne
+muselsl view
+–––––––––––––––––––––––––
+sudo apt install python3-tk -y
+sudo apt install python3-pil python3-pil.imagetk -y
+
+liblsl
+–––––––––––––––––––––––––
+https://github.com/sccn/liblsl
+/home/ahmad/.local/lib/python3.10/site-packages/pylsl
+
+
+LabRecorder
+––––––––––––––––––––––––––
+sudo apt-get install qt6-base-dev freeglut3-dev
+sudo apt install build-essential g++ cmake
+curl -L https://github.com/sccn/liblsl/releases/download/v1.16.0/liblsl-1.16.0-jammy_amd64.deb -o liblsl.deb
+
+
+/usr/LabRecorder
+/usr/local/bin/LabRecorder
+/usr/bin/LabRecorder
+/usr/bin/LabRecorderCLI
+
+muselsl stream --address 00:55:DA:BB:6F:7A
+muselsl stream --name MuseS-6F7A
+muselsl view --address 00:55:DA:BB:6F:7A
+
+
+LAN
+––––––––––––––––––––––––––
+sudo apt-get install nmap -y
+
+nmap 192.168.1.*
+
+
+
+
+ping 192.168.1.255 -b
+sudo nmap -sL 123.123.123.*
+
+ip a
+
+python3 -m http.server 3200
+http://localhost:8000/
+http://192.168.1.255:8000/
+http://192.168.1.242:8000/
+
+https://manpages.ubuntu.com/manpages/noble/en/man1/arp-scan.1.html
+sudo arp-scan --localnet
+hostname -I
+
+
+ssh muse@192.168.1.60 // muse RP1
+ssh Raspi_A@192.168.1.191 // Muse1
+
+sudo gedit /etc/ssh/sshd_config
+
+––––––––––––––––––––––––––
+ssh: connect to host 192.168.1.28 port 22: Connection refused
+https://askubuntu.com/questions/144364/ssh-connect-to-host-myremotehost-com-port-22-connection-refused
+
+sudo apt install update
+sudo apt install openssh-server
+sudo ufw allow 22
+
+
+scp -a /var/www/html/blog/ root@157.230.39.200:/var/www/exploresylhet.com/
+
+ssh
+port-22-connection-timed-out
+sudo ufw allow 22
+
+
+sudo apt install openssh-server -y
+https://askubuntu.com/questions/673597/ssh-connect-to-host-127-0-0-1-port-2222-connection-refused
+
+sudo rm /etc/ssh/ssh_host_*
+sudo dpkg-reconfigure openssh-server
+
+ssh localhost
+
+
+https://superuser.com/questions/579609/accessing-computer-in-other-subnet-in-the-same-network
+
+
+ssh -p 2222 ahmad@84.249.52.211
+
+
+connect to home laptop from anywhere with SSH linnux
+
+
+
+sudo systemctl status ssh
+
+username
+––––––––––––––––––––––––––
+
+https://askubuntu.com/questions/659454/how-to-safely-change-username-and-hostname
+
+Remote Desktop
+––––––––––––––––––––––––––
+First enable remote sharing by settings >> Sharing >> Enable Remote Desktop
+
+https://bugs.launchpad.net/ubuntu/+source/remmina/+bug/1006300

@@ -18,7 +18,7 @@ apt install python3-tk -y
 apt install python3-pil python3-pil.imagetk -y
 echo "_____ Python and muselsl dependency Installation complete _____"
 
-apt install build-essential g++ cmake -yping
+apt install build-essential g++ cmake -y
 apt install cmake -y
 echo "_____ Cmake Installation complete _____"
 apt install openssh-server -y
@@ -28,6 +28,7 @@ apt-get install qt6-base-dev freeglut3-dev -y
 
 apt install git -y
 apt install curl -y
+apt install socat -y
 
 
 curl -L -O https://github.com/alexandrebarachant/muse-lsl/archive/master.zip

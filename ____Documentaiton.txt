@@ -4,20 +4,7 @@ Liblsl Location
 –––––––––––––––––––––––––
 /usr/lib
 sudo apt remove liblsl
-LabRecorder
-–––––––––––––––––––––––––
-https://github.com/labstreaminglayer/App-LabRecorder
 
-
-/usr/LabRecorder
-/usr/local/bin/LabRecorder
-/usr/bin/LabRecorder
-/usr/bin/LabRecorderCLI
-
-https://github.com/xdf-modules/pyxdf
-
-
-Read xdf file format in python
 
 MuseLSL
 –––––––––––––––––––––––––
@@ -81,7 +68,23 @@ sudo apt-get -f install
 
 
 LabRecorder
-––––––––––––––––––––––––––
+–––––––––––––––––––––––––
+https://github.com/labstreaminglayer/App-LabRecorder
+
+
+/usr/LabRecorder
+/usr/local/bin/LabRecorder
+/usr/bin/LabRecorder ***
+/usr/bin/LabRecorderCLI
+
+https://github.com/xdf-modules/pyxdf
+
+
+Read xdf file format in python
+
+
+
+
 https://github.com/labstreaminglayer/App-LabRecorder
 https://labstreaminglayer.readthedocs.io/dev/build_env.html
 sudo apt-get install qt6-base-dev freeglut3-dev
@@ -109,6 +112,7 @@ https://github.com/sccn/liblsl
 https://labstreaminglayer.readthedocs.io/dev/lib_dev.html
 
 /home/ahmad/.local/lib/python3.10/site-packages/pylsl
+/usr/local/lib/python3.10/dist-packages/pylsl
 
 Create Lib folder and paste liblsl folder there
 

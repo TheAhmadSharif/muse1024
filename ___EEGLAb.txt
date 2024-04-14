@@ -1,0 +1,6 @@
+https://sccn.ucsd.edu/eeglab/downloadtoolbox.php
+
+x-axis represents time, and the y-axis represents the voltage or amplitude of brainwaves
+
+
+https://eeglab.org/tutorials/01_Install/Install.html

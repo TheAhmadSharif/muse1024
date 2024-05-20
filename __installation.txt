@@ -1,3 +1,26 @@
+––––––––––––––––– 17 May 2024 –––––––––––––––––
+
+https://www.qt.io/download-qt-installer
+
+
+
+
+––––––––––––––––– 19 April 2024 –––––––––––––––––
+ssh yellow@192.168.1.190
+ssh green@192.168.1.59
+
+
+sudo arp-scan --localnet
+hostname -I
+
+
+Wifi Hotspot
+https://github.com/lakinduakash/linux-wifi-hotspot
+
+sudo apt install -y libgtk-3-dev build-essential gcc g++ pkg-config make hostapd libqrencode-dev libpng-dev
+
+
+––––––––––––––––––––––––––––––––––
 sudo apt install python3-pip -y
 sudo pip install pylsl
 sudo pip install muselsl
@@ -27,17 +50,15 @@ curl -L https://github.com/sccn/liblsl/releases/download/v1.16.0/liblsl-1.16.0-j
 
 muselsl stream --address 00:55:DA:BB:6F:7A
 muselsl stream --name MuseS-6F7A
-muselsl view --address 00:55:DA:BB:6F:7A
 
+
+add in bashrc
+source ~/.bashrc
+export PATH="/usr/bin:$PATH"
 
 LAN
 ––––––––––––––––––––––––––
 sudo apt-get install nmap -y
-
-nmap 192.168.1.*
-
-
-
 
 ping 192.168.1.255 -b
 sudo nmap -sL 123.123.123.*
@@ -105,6 +126,8 @@ username
 ––––––––––––––––––––––––––
 
 https://askubuntu.com/questions/659454/how-to-safely-change-username-and-hostname
+
+https://askubuntu.com/questions/34074/how-do-i-change-my-username
 
 Remote Desktop
 ––––––––––––––––––––––––––

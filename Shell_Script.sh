@@ -1,4 +1,10 @@
 #!/bin/bash
+
+# This shell script can be used to install all dependencies at once for muse device to run in any Linux distribtuibn (Ubuntu)
+# Author: Ahmad Sharif
+# Date: 15 April 2024
+
+
 set -e -x
 handle_error() {
     echo "An error occurred on line $1"
@@ -38,3 +44,9 @@ rm master.zip
 curl -L -O https://github.com/sccn/liblsl/archive/master.zip
 unzip master -d ~/Desktop/
 rm master.zip
+
+apt-get install qt6-base-dev freeglut3-dev -y
+
+echo "_____ LabRecorder _____"
+
+curl -L -O https://github.com/labstreaminglayer/App-LabRecorder/releases/download/v1.16.4/LabRecorder-1.16.4-jammy_amd64.deb

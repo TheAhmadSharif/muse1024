@@ -1,0 +1,32 @@
+FileName = 01.xdf,,
+Muse,"streams{1, 1}","Streams{1, 2}"
+hostname,green-machine,yellow-machine
+First_timestamp,1714022397.50736,1714022397.53335
+Last_timestamp,1714022436.50224,1714022436.57185
+sample_count,9983,9995
+source_id,Muse00:55:DA:BB:6F:7A,Muse00:55:DA:BB:6F:88
+duration,38.9999852180481,39.0384066104889
+,,
+,,
+,,
+,,
+FileName = 02.xdf,,
+Muse,"streams{1, 1}","Streams{1, 2}"
+hostname,green-machine,yellow-machine
+First_timestamp,1714022510.65035,1714022510.69147
+Last_timestamp,1714022563.69751,1714022563.71211
+sample_count,13583,13571
+source_id,Muse00:55:DA:BB:6F:7A,Muse00:55:DA:BB:6F:88
+duration,53.052170753479,53.0211260318756
+,,
+,,
+,,
+,,
+FileName = 03.xdf,,
+Muse,"streams{1, 1}","Streams{1, 2}"
+hostname,green-machine,yellow-machine
+First_timestamp,1714022578.83887,1714022578.85941
+Last_timestamp,1714022629.82482,1714022629.90167
+sample_count,13055,13067
+source_id,Muse00:55:DA:BB:6F:7A,Muse00:55:DA:BB:6F:88
+duration,50.9905395507812,51.0420112609863

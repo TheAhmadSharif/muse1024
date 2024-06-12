@@ -64,49 +64,23 @@ sudo arp-scan --localnet
 hostname -I
 
 
-ssh muse@192.168.1.60 // muse RP1
-ssh Raspi_A@192.168.1.191 // Muse1
+
 
 sudo gedit /etc/ssh/sshd_config
-
-––––––––––––––––––––––––––
-ssh: connect to host 192.168.1.28 port 22: Connection refused
-https://askubuntu.com/questions/144364/ssh-connect-to-host-myremotehost-com-port-22-connection-refused
-
-
-WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
 ––––––––––––––––––––––––––
 ssh-keygen -R 192.168.1.191
 
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 sudo apt install update
-sudo apt install openssh-server
-sudo ufw allow 22
-
-
-scp -a /var/www/html/blog/ root@157.230.39.200:/var/www/exploresylhet.com/
-
-ssh
-port-22-connection-timed-out
-sudo ufw allow 22
-
-
 sudo apt install openssh-server -y
-https://askubuntu.com/questions/673597/ssh-connect-to-host-127-0-0-1-port-2222-connection-refused
+sudo ufw allow 22
+sudo service ssh status
 
-sudo rm /etc/ssh/ssh_host_*
-sudo dpkg-reconfigure openssh-server
+scp apps.zip green@192.168.1.59:/home/green/Desktop/
 
-ssh localhost
-
-
-https://superuser.com/questions/579609/accessing-computer-in-other-subnet-in-the-same-network
-
-
-ssh -p 2222 ahmad@84.249.52.211
-
-
-connect to home laptop from anywhere with SSH linnux
-
+ssh green@192.168.1.59 
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 
 sudo systemctl status ssh

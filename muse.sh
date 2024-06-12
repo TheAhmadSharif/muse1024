@@ -18,6 +18,14 @@ apt install python3-pip -y
 pip install pylsl muselsl mne
 
 
+
+
+# _________________ muselsl view  _________________ #
+
+apt install python3-tk -y
+apt install python3-pil python3-pil.imagetk -y
+
+
 # sh /home/ahmad/Desktop/liblsl-master/standalone_compilation_linux.sh
 
 # mkdir /home/ahmad/.local/lib/python3.10/site-packages/pylsl/lib

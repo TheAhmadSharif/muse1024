@@ -19,6 +19,7 @@ apt install python3-pip -y
 apt install python3-tk -y
 apt install python3-pil python3-pil.imagetk -y
 apt install openssh-server -y
+ufw allow 22
 apt install build-essential g++ cmake -y
 apt install cmake -y
 apt install curl -y
@@ -28,11 +29,13 @@ apt-get install qt6-base-dev freeglut3-dev -y
 apt install remmina -y
 mkdir ~/Templates
 touch ~/Templates/TextFile.txt
+gsettings set org.gnome.desktop.interface clock-show-seconds true
+
+
 
 apt-get install qt6-base-dev freeglut3-dev -y # LabRecorder
-pip install pylsl
-pip install muselsl
-pip install mne
+pip install pylsl muselsl mne
+
 
 echo "_____ Python and muselsl dependency Installation complete _____"
 
@@ -45,7 +48,6 @@ curl -L -O https://github.com/sccn/liblsl/archive/master.zip
 unzip master -d ~/Desktop/
 rm master.zip
 
-apt-get install qt6-base-dev freeglut3-dev -y
 
 echo "_____ LabRecorder _____"
 

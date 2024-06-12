@@ -11,10 +11,15 @@ trap 'handle_error $LINENO' ERR
 # curl -L -O https://github.com/sccn/liblsl/archive/master.zip
 # unzip master -d ~/Desktop/
 # rm master.zip
-sh /home/ahmad/Desktop/liblsl-master/standalone_compilation_linux.sh
 
-mkdir /home/ahmad/.local/lib/python3.10/site-packages/pylsl/lib
-cp liblsl.so lslver /home/ahmad/.local/lib/python3.10/site-packages/pylsl/lib
+apt install -y libgtk-3-dev build-essential gcc g++ pkg-config make hostapd libqrencode-dev libpng-dev
+
+apt install python3-pip -y
+pip install pylsl muselsl mne
 
 
-https://github.com/labstreaminglayer/App-LabRecorder
+# sh /home/ahmad/Desktop/liblsl-master/standalone_compilation_linux.sh
+
+# mkdir /home/ahmad/.local/lib/python3.10/site-packages/pylsl/lib
+# cp liblsl.so lslver /home/ahmad/.local/lib/python3.10/site-packages/pylsl/lib
+
